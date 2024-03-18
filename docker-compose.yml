@@ -1,0 +1,26 @@
+version: "3"
+services:
+  jupyter:
+    image: quay.io/jupyter/datascience-notebook:2024-03-14
+    ports:
+      - "10000:8888"
+    volumes:
+      - ${PWD}:/home/jovyan
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - JUPYTER_LAB_ENABLE=yes
+      - JUPYTER_TOKEN=
+      - JUPYTER_ALLOW_ORIGIN=*
+      - JUPYTER_NOTEBOOK_DIR=/home/jovyan
+      - JUPYTER_LAB_DIR=/home/jovyan
+      - JUPYTER_LAB_PASSWORD=
+      - JUPYTER_LAB_TOKEN=
+      - JUPYTER_LAB_ALLOW_ORIGIN=*
+      - JUPYTER_LAB_URL=/lab
+      - JUPYTER_LAB_BASE_URL=/lab
+    command:
+      [
+        "/bin/bash",
+        "-c",
+        "pip install -r /home/jovyan/requirements.txt && start-notebook.sh --NotebookApp.token='' --NotebookApp.password='' --NotebookApp.allow_origin='*'",
+      ]

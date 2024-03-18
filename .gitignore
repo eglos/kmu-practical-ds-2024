@@ -158,3 +158,10 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+.kaggle/kaggle.json
+.bash_history
+.jupyter/migrated
+.jupyter/lab/workspaces/default-37a8.jupyterlab-workspace
+.local/share/jupyter/runtime/jpserver-7-open.html
+.local/share/jupyter/runtime/jpserver-7.json
+.local/share/jupyter/runtime/jupyter_cookie_secret
