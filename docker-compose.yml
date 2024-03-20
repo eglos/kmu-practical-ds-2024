@@ -11,8 +11,8 @@ services:
       - JUPYTER_LAB_ENABLE=yes
       - JUPYTER_TOKEN=
       - JUPYTER_ALLOW_ORIGIN=*
-      - JUPYTER_NOTEBOOK_DIR=/home/jovyan
-      - JUPYTER_LAB_DIR=/home/jovyan
+      - JUPYTER_NOTEBOOK_DIR=/home/jovyan/work
+      - JUPYTER_LAB_DIR=/home/jovyan/work
       - JUPYTER_LAB_PASSWORD=
       - JUPYTER_LAB_TOKEN=
       - JUPYTER_LAB_ALLOW_ORIGIN=*
