@@ -5,7 +5,7 @@ services:
     ports:
       - "10000:8888"
     volumes:
-      - ${PWD}:/home/jovyan
+      - ${PWD}:/home/jovyan/work
     environment:
       - JUPYTER_ENABLE_LAB=yes
       - JUPYTER_LAB_ENABLE=yes
@@ -22,5 +22,5 @@ services:
       [
         "/bin/bash",
         "-c",
-        "pip install -r /home/jovyan/requirements.txt && start-notebook.sh --NotebookApp.token='' --NotebookApp.password='' --NotebookApp.allow_origin='*'",
+        "pip install -r /home/jovyan/work/requirements.txt && start-notebook.sh --NotebookApp.token='' --NotebookApp.password='' --NotebookApp.allow_origin='*'",
       ]

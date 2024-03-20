@@ -165,3 +165,11 @@ cython_debug/
 .local/share/jupyter/runtime/jpserver-7-open.html
 .local/share/jupyter/runtime/jpserver-7.json
 .local/share/jupyter/runtime/jupyter_cookie_secret
+
+.local/
+.npm/
+.jupyter/
+.ipython/
+.history/
+.cache/
+.kaggle/
