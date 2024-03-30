@@ -1,0 +1,5 @@
+# Stacking : 예측된 y를 이용하여 다시 한번 모델을 돌리는 것
+
+# 로그 기록도 필수로 돌려야한다. (중요)
+
+# comet api key : 7LSu88mmrRBhoDkDDf0B8Usdu

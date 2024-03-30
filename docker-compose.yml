@@ -5,7 +5,8 @@ services:
     ports:
       - "10000:8888"
     volumes:
-      - ${PWD}:/home/jovyan/work
+      #- ${PWD}:/home/jovyan/work
+      - /Users/LeeChangHwan/Desktop/university/3th/DST/workspace/kmu-practical-ds-2024:/home/jovyan/work
     environment:
       - JUPYTER_ENABLE_LAB=yes
       - JUPYTER_LAB_ENABLE=yes
